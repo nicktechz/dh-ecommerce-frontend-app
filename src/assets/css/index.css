@@ -1,0 +1,24 @@
+@import './reset.css';
+@import './fonts.css';
+
+body {
+  font-size: 100%;
+  font-family: var(--tipografia-main);
+  color: var(--secondary-color-full);
+  line-height: 1.3em;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+#root {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+  position: relative;
+}

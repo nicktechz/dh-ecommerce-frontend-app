@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1325.8 1546.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f1efe7;
+      }
+
+      .cls-2 {
+        fill: #432818;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 23)  -->
+  <g>
+    <g id="Layer_1">
+      <ellipse class="cls-2" cx="658.4" cy="920.7" rx="470.1" ry="232.8"/>
+      <ellipse class="cls-2" cx="658.4" cy="605.8" rx="403.4" ry="257.1"/>
+      <ellipse class="cls-2" cx="658.4" cy="254.1" rx="260.2" ry="202.5"/>
+      <ellipse class="cls-2" cx="658.4" cy="1246" rx="629.8" ry="232.8"/>
+      <ellipse class="cls-1" cx="658.4" cy="765.2" rx="84.3" ry="713.6"/>
+    </g>
+  </g>
+</svg>
