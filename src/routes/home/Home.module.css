@@ -1,8 +1,12 @@
-.products_month_box {
+.products_container {
   position: relative;
   margin: 0 auto;
   width: 100%;
   height: fit-content;
+  padding: 24px 0px;
+}
+
+.products_dark_bg {
   background-color: var(--secondary-color-full);
   color: var(--primary-color-full);
 }
@@ -11,17 +15,7 @@
   margin: 0 auto;
   padding: 48px 24px;
 }
-.products_pankas {
-  padding: 12px 0px;
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
-  height: fit-content;
+.products_light_bg {
   background-color: var(--primary-color-full);
   color: var(--primary-color-full);
-  .products_months_inner_container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 48px 24px;
-  }
 }

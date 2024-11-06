@@ -2,7 +2,7 @@
   width: 100%;
   display: grid;
   place-content: center;
-  height: 50vh;
+  height: 60vh;
   text-align: center;
   background-image: url('../../../../assets/img/hero/hero-bakery.jpg');
   color: var(--primary-color-full);
