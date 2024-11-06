@@ -15,7 +15,7 @@
   --default-border-radius: 0px;
   --small-border-radius: 4px;
   --medium-border-radius: 8px;
-  --large-boder-radius: 12px;
+  --large-border-radius: 12px;
 }
 
 /* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */

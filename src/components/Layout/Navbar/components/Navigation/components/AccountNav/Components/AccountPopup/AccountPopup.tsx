@@ -1,3 +1,5 @@
+import { useDispatch } from 'react-redux';
+import style from './AccountPopup.module.css';
 import {
   BadgeDollarSign,
   MapPin,
@@ -5,8 +7,17 @@ import {
   Settings,
   WalletCards,
 } from 'lucide-react';
-import style from './AccountPopup.module.css';
+import { LOGGED_OUT_USER } from '../../../../../../../../../config/types/types';
+import { SyntheticEvent } from 'react';
+
 function AccountPopup() {
+  const dispatch = useDispatch();
+
+  function loggedOutUser(e: SyntheticEvent) {
+    e.preventDefault();
+    dispatch({ type: LOGGED_OUT_USER });
+  }
+
   return (
     <div className={style.account_box}>
       <div className={style.account_box_header}>
@@ -45,7 +56,9 @@ function AccountPopup() {
         </div>
       </div>
       <div className={style.account_box_footer}>
-        <a href="">Cerrar sesión</a>
+        <a href="" onClick={loggedOutUser}>
+          Cerrar sesión
+        </a>
       </div>
     </div>
   );

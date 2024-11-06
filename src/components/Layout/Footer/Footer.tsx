@@ -17,15 +17,30 @@ function Footer() {
           <img src={IsoTipo} alt="" />
           <h3>Cuidamos Tu Mente Cuerpo Y Alma</h3>
           <div className={styles.footer_info_section_brand_socials}>
-            <div className={styles.footer_info_section_brand_socials_icon}>
+            <a
+              className={styles.footer_info_section_brand_socials_icon}
+              href="https://facebook.com/massamare.col"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <Facebook fillOpacity={0} />
-            </div>
-            <div className={styles.footer_info_section_brand_socials_icon}>
+            </a>
+            <a
+              className={styles.footer_info_section_brand_socials_icon}
+              href="https://instagram.com/massamare.co"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <Instagram fillOpacity={0} />
-            </div>
-            <div className={styles.footer_info_section_brand_socials_icon}>
+            </a>
+            <a
+              className={styles.footer_info_section_brand_socials_icon}
+              href="https://linkedin.com/company/massamareco"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Linkedin fillOpacity={0} />
-            </div>
+            </a>
           </div>
         </div>
         <div className={styles.footer_info_section_brand_language}>
@@ -117,19 +132,31 @@ function Footer() {
             <div>
               <MapPin fillOpacity={0} />
             </div>
-            <a href="">Cll 159 #54-69, Cantalejo, Bogotá DC.</a>
+            <a
+              href="https://maps.app.goo.gl/EZvrFifpHehfpjre6"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Cll 159 #54-69, Cantalejo, Bogotá DC.
+            </a>
           </li>
           <li>
             <div>
               <MailQuestion fillOpacity={0} />
             </div>
-            <a href="">contacto@massamare.co</a>
+            <a href="mailto:contacto@massamare.co">contacto@massamare.co</a>
           </li>
           <li>
             <div>
               <PhoneCall fillOpacity={0} />
             </div>
-            <a href="">+57 (317) 710 1455</a>
+            <a
+              href="https://wa.link/znfzr6"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              +57 (317) 710 1455
+            </a>
           </li>
         </ul>
       </section>

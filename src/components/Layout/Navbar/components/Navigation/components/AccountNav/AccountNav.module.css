@@ -1,0 +1,21 @@
+.navbar_information_box_account_not_logged {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.navbar_information_box_account_avatar {
+  --width-and-height: 40px;
+  width: var(--width-and-height);
+  height: var(--width-and-height);
+  color: rgba(241, 239, 231, 0.9);
+  background-color: var(--secondary-color-full);
+  display: grid;
+  place-content: center;
+  border-radius: 100%;
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.32 28.32">
+  <circle cx="14.16" cy="14.16" r="14.16" style="fill: #432818;"/>
+  <text transform="translate(1.88 14.16)" style="fill: #f2efe7; font-family: CascadiaCode-Regular, &apos;Cascadia Code&apos;; font-size: 6px; font-variation-settings: &apos;wght&apos; 400;"><tspan x="0" y="0">CONOCER</tspan></text>
+  <text transform="translate(8.91 20.2)" style="fill: #f2efe7; font-family: CascadiaCode-Regular, &apos;Cascadia Code&apos;; font-size: 6px; font-variation-settings: &apos;wght&apos; 400;"><tspan x="0" y="0">MÁS</tspan></text>
+  <line x1="6.14" y1="22.19" x2="21.72" y2="22.19" style="fill: none; stroke: #f2efe7; stroke-miterlimit: 10;"/>
+  <line x1="20.42" y1="20.35" x2="22.04" y2="22.58" style="fill: none; stroke: #f2efe7; stroke-miterlimit: 10;"/>
+  <line x1="21.72" y1="22.19" x2="19.85" y2="24.06" style="fill: none; stroke: #f2efe7; stroke-miterlimit: 10;"/>
+</svg>

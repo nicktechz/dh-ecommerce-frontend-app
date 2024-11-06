@@ -1,0 +1,26 @@
+.navbar_information_box_account_cart {
+  display: flex;
+  align-items: center;
+  min-width: auto;
+  position: relative;
+  font-size: 0.85rem;
+  .navbar_information_box_account_cart_count {
+    --width-and-height: 18px;
+    background-color: var(--secondary-color-full);
+    border-radius: 100%;
+    display: grid;
+    place-content: center;
+    color: var(--primary-color-full);
+    width: var(--width-and-height);
+    height: var(--width-and-height);
+    position: absolute;
+    right: -10px;
+    top: -8px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

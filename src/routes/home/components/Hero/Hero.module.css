@@ -1,0 +1,37 @@
+.hero_container {
+  width: 100%;
+  display: grid;
+  place-content: center;
+  height: 50vh;
+  text-align: center;
+  background-image: url('../../../../assets/img/hero/hero-bakery.jpg');
+  color: var(--primary-color-full);
+}
+.hero_container::after {
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  background-color: aqua;
+  z-index: 80;
+}
+.hero_container_title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero_container {
+    background-position: center;
+    height: 80vh;
+    padding: 24px;
+    line-height: 1;
+    text-align: left;
+  }
+  .hero_container_title {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+}

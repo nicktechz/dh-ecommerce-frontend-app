@@ -1,0 +1,20 @@
+.nav_link_mobile {
+  font-size: 2rem;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-color: var(--primary-color-full);
+  padding: 24px;
+  border-style: solid;
+  transition: 0.3s background-color, color cubic-bezier(0.075, 0.82, 0.165, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &:hover {
+    background-color: var(--primary-color-full);
+    color: var(--secondary-color-full);
+    cursor: pointer;
+  }
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}

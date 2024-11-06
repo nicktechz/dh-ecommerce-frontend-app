@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 965.86 965.86">
+  <circle id="Circulo" cx="482.93" cy="482.93" r="482.93" style="fill: #f2efe7;"/>
+  <g>
+    <ellipse cx="482.93" cy="530.74" rx="144.53" ry="71.57" style="fill: #442918;"/>
+    <ellipse cx="482.93" cy="433.92" rx="124.02" ry="79.04" style="fill: #442918;"/>
+    <ellipse cx="482.93" cy="325.8" rx="80" ry="62.26" style="fill: #442918;"/>
+    <ellipse cx="482.93" cy="630.75" rx="193.63" ry="71.57" style="fill: #442918;"/>
+    <ellipse cx="482.93" cy="482.93" rx="25.92" ry="219.39" style="fill: #f1efe8;"/>
+  </g>
+</svg>

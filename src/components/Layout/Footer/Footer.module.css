@@ -26,14 +26,21 @@
       display: flex;
       gap: 8px;
       .footer_info_section_brand_socials_icon {
+        border: 1.5px solid var(--secondary-color-full);
+        padding: 4px;
+        border-radius: 100%;
+        transition: 0.3s background-color, color;
         & svg {
           --width-and-height: 18px;
           width: var(--width-and-height);
           height: var(--width-and-height);
         }
-        border: 1.5px solid var(--secondary-color-full);
-        padding: 4px;
-        border-radius: 100%;
+        &:hover {
+          transition: 0.3s background-color, color;
+          cursor: pointer;
+          background-color: var(--secondary-color-full);
+          color: var(--primary-color-full);
+        }
       }
     }
   }
@@ -55,12 +62,13 @@
 }
 
 .footer_link_section {
+  margin: 12px 0px;
   & h4 {
     font-weight: 600;
     margin-bottom: 8px;
   }
   & > ul > li:not(:last-child) {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
   }
   .footer_link_section_information_group {
     & li {

@@ -1,6 +1,6 @@
 import style from './CartPopup.module.css';
-import VienaLecheImg from '../../../../../assets/img/breads/viena-leche.jpg';
-import PanDeBananoImg from '../../../../../assets/img/breads/pan-banano.jpg';
+import VienaLecheImg from '../../../../../../../../../assets/img/breads/viena-leche.jpg';
+import PanDeBananoImg from '../../../../../../../../../assets/img/breads/pan-banano.jpg';
 function CartPopup() {
   return (
     <div className={style.cart_box}>
@@ -34,9 +34,9 @@ function CartPopup() {
         <div>x3</div>
       </div>
       <div className={style.cart_box_footer}>
-        <div>
+        <div className={style.cart_box_footer_delivery}>
           <span>Envio:</span>
-          <span>$6.500</span>
+          <span>$6.500(COP)</span>
         </div>
         <div>
           <span className={style.cart_box_footer_total}>Total:</span>

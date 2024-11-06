@@ -1,0 +1,16 @@
+.navbar_product_menu_box_links_large {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar_product_menu_box_links_large {
+    display: none;
+  }
+  .navbar_information_box_menu {
+    display: none;
+  }
+}
