@@ -1,0 +1,236 @@
+{
+  "products": [
+    {
+      "group-name": "Pan de leche",
+      "category": "Tradicionales",
+      "tags": ["Saludable", "Tradicional"],
+      "variations": [
+        {
+          "name": "Pan de leche",
+          "price": "20.500",
+          "image": "https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_2000/f_webp,fl_awebp,q_auto:low/v1730932862/cdhf69xj6dplevpqjs9a.jpg",
+          "descriptions": {
+            "shortDescription": "Pan suave y esponjoso con un toque de leche, ideal para acompañar desayunos y meriendas",
+            "largeDescription": "Pan suave y esponjoso con un toque sutil de leche que lo hace increíblemente tierno y delicioso. Perfecto para acompañar desayunos, meriendas o para disfrutar solo, su textura ligera y sabor delicado lo convierten en un favorito para cualquier ocasión. Ideal para comerlo con mantequilla, mermelada o solo"
+          }
+        }
+      ]
+    },
+    {
+      "group-name": "Pan integral",
+      "category": "Tradicionales",
+      "tags": ["Saludable", "Tradicional"],
+      "variations": [
+        {
+          "name": "Pan integral",
+          "price": "19.000",
+          "image": "https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_2000/f_auto,q_auto:low/j7e6ritazxqmjtu9m8ci.jpg",
+          "descriptions": {
+            "shortDescription": "Pan de sabor suave y textura densa, elaborado con harina integral para una opción más saludable y deliciosa",
+            "largeDescription": "Pan de textura densa y sabor suave, elaborado con harina integral que aporta más fibra y nutrientes. Ideal para quienes buscan una opción más saludable sin sacrificar el sabor. Perfecto para sándwiches, tostadas o acompañar comidas, su equilibrio entre lo nutritivo y delicioso es ideal para cualquier dieta"
+          }
+        },
+        {
+          "name": "Pan integral de chocolate",
+          "price": "22.000",
+          "image": "https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_2000/f_auto,q_auto:low/s9fhov7tw3klqcjdbtlv.jpg",
+          "descriptions": {
+            "shortDescription": "Pan integral con un toque de chocolate, combinando lo saludable con un sabor dulce y delicios.",
+            "largeDescription": "Este pan integral combina lo mejor de dos mundos: la riqueza de la harina integral y el sabor intenso del chocolate. Esponjoso y con un toque dulce, es perfecto para aquellos que buscan una opción nutritiva sin dejar de lado el placer del chocolate. Ideal para desayunos o meriendas que deleitan y nutren a la vez"
+          }
+        }
+      ]
+    },
+    {
+      "group-name": "Pan blanco de pesto",
+      "category": "Tradicionales",
+      "tags": ["Saludable", "Tradicional", "Salado", "Rellenos"],
+      "variations": [
+        {
+          "name": "Pan blanco de pesto",
+          "price": "24.500",
+          "image": "https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_2000/f_auto,q_auto:low/pv7izbss6ekosgvguan9.jpg",
+          "descriptions": {
+            "shortDescription": "Pan suave con un delicioso toque de pesto, perfecto para acompañar pastas o disfrutar solo",
+            "largeDescription": "Pan blanco suave y esponjoso, impregnado con el delicioso sabor del pesto, que combina albahaca, ajo, piñones y queso. Cada bocado ofrece una mezcla aromática y sabrosa que lo hace perfecto para acompañar pastas, sopas o disfrutarlo solo como aperitivo. Una opción gourmet que eleva cualquier comida con su toque mediterráneo"
+          }
+        }
+      ]
+    },
+    {
+      "group-name": "Pan de arequipe",
+      "category": "Tradicionales",
+      "tags": ["Saludable", "Tradicional", "Dulce", "Rellenos"],
+      "variations": [
+        {
+          "name": "Pan de arequipe",
+          "price": "22.000",
+          "image": "https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_2000/f_auto,q_auto:low/a84tucegnwnlo1fkbyjv.jpg",
+          "descriptions": {
+            "shortDescription": "Esponjoso pan relleno de arequipe cremoso, una deliciosa combinación de suavidad y dulzura",
+            "largeDescription": "Pan esponjoso relleno con un suave y cremoso arequipe que aporta un dulzor irresistible en cada mordida. Su combinación de texturas, con el exterior tierno y el corazón dulce y cremoso, lo hace perfecto para acompañar un café o disfrutar como un antojo especial. Una delicia que conquista a los amantes de lo dulce"
+          }
+        }
+      ]
+    },
+    {
+      "group-name": "Pan de frutas cristalizadas",
+      "category": "Tradicionales",
+      "tags": ["Saludable", "Tradicional", "Dulce", "Rellenos", "Navideño"],
+      "variations": [
+        {
+          "name": "Pan de frutas cristalizadas",
+          "price": "22.000",
+          "image": "https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_2000/f_auto,q_auto:low/c6gq4qg9unn3wz0nztlh.jpg",
+          "descriptions": {
+            "shortDescription": "Mantén el espiritú navideño todo el año y disfruta de un delicioso pan de frutas",
+            "largeDescription": "Este pan dulce y esponjoso está lleno de vibrantes frutas cristalizadas que aportan un contraste de texturas y un dulzor sutil en cada mordida. Perfecto para celebraciones o para disfrutar en cualquier momento del día, su combinación de sabores frutales lo hace un acompañante especial para bebidas calientes y meriendas"
+          }
+        }
+      ]
+    },
+    {
+      "group-name": "Panka triplechocolate",
+      "category": "Pankas",
+      "tags": ["Dulce", "Rellenos", "Chocolate"],
+      "variations": [
+        {
+          "name": "Panka triplechocolate",
+          "price": "21.000",
+          "image": "https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_2000/f_auto,q_auto:low/nnhytvinmktbsn9xk5fk.jpg",
+          "descriptions": {
+            "shortDescription": "Pan dulce con tres capas de chocolate: suave y esponjoso, relleno y cubierto con chispas, ideal para los amantes del chocolate",
+            "largeDescription": "Pan dulce y esponjoso con tres intensas capas de chocolate: en la masa, relleno cremoso y una cobertura con chispas que potencian el sabor. Cada bocado es un deleite para los amantes del chocolate, combinando texturas suaves y un dulzor irresistible que lo convierte en un placer indulgente y perfecto para cualquier ocasión especial"
+          }
+        }
+      ]
+    },
+    {
+      "group-name": "Panka chocofresa",
+      "category": "Pankas",
+      "tags": ["Dulce", "Rellenos", "Chocolate", "Fresa"],
+      "variations": [
+        {
+          "name": "Panka chocofresa",
+          "price": "21.000",
+          "image": "https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_2000/f_auto,q_auto:low/gh4ap9jb8xaxxdctynft.jpg",
+          "descriptions": {
+            "shortDescription": "Pan dulce con sabor a chocolate y un toque de fresa. Esponjoso, suave y con el equilibrio perfecto entre lo dulce y lo frutal",
+            "largeDescription": "Un pan dulce único que combina la suavidad de un panka esponjoso con el delicioso sabor del chocolate y un toque fresco de fresa. Cada bocado ofrece una mezcla perfecta de dulzura y frescura, ideal para disfrutar en cualquier momento del día, ya sea en el desayuno, merienda o como un antojo irresistible"
+          }
+        }
+      ]
+    },
+    {
+      "group-name": "Panka de canela",
+      "category": "Pankas",
+      "tags": ["Dulce", "Rellenos", "Chocolate", "Fresa"],
+      "variations": [
+        {
+          "name": "Panka de canela",
+          "price": "21.000",
+          "image": "https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_2000/f_auto,q_auto:low/eyboh50598u0hmqkf53h.jpg",
+          "descriptions": {
+            "shortDescription": "Pan dulce con aroma y sabor a canela, suave y esponjoso, perfecto para disfrutar en cualquier momento",
+            "largeDescription": "Este delicioso panka de canela ofrece una textura suave y esponjosa, con el aroma y sabor envolvente de la canela que lo hace irresistible. Perfecto para disfrutar en cualquier momento del día, su dulzura sutil y su calidez lo convierten en la opción ideal para acompañar un café o té"
+          }
+        }
+      ]
+    },
+    {
+      "group-name": "Viena de leche",
+      "category": "Vienas",
+      "tags": ["Esponjoso"],
+      "variations": [
+        {
+          "name": "Viena de leche",
+          "price": "22.000",
+          "image": "https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_2000/f_auto,q_auto:low/cfj60erxx0pdgggjyh0n.jpg",
+          "descriptions": {
+            "shortDescription": "Delicado pan viena enriquecido con un toque de leche, ideal para acompañar",
+            "largeDescription": "Una vienesa suave y delicada, enriquecida con un toque de leche que le otorga una textura ligera y un sabor suave. Perfecta para acompañar desayunos o meriendas, su sabor suave y esponjoso la convierte en una opción versátil y deliciosa, ideal para disfrutar con mermelada, mantequilla o sola"
+          }
+        }
+      ]
+    },
+    {
+      "group-name": "Viena de chocolate",
+      "category": "Vienas",
+      "tags": ["Esponjoso", "Dulce", "Chocolate"],
+      "variations": [
+        {
+          "name": "Viena de chocolate",
+          "price": "23.000",
+          "image": "https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_2000/f_auto,q_auto:low/ewet85xtj9jvnweeo7to.jpg",
+          "descriptions": {
+            "shortDescription": "Pan viena con el sabor intenso del chocolate, perfecto para tus antojos",
+            "largeDescription": "Deliciosa vienesa con un toque de chocolate que la convierte en la opción perfecta para los amantes de lo dulce. Su textura suave y esponjosa, combinada con el sabor intenso del chocolate, la hace ideal para acompañar un café o disfrutar en cualquier momento del día como un antojo irresistible"
+          }
+        }
+      ]
+    },
+    {
+      "group-name": "Pan de banano",
+      "category": "Panes de banano",
+      "tags": ["Banano", "Saludable", "Sin azúcar", "Sin gluten"],
+      "variations": [
+        {
+          "name": "Pan de banano",
+          "price": "26.500",
+          "image": "https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_2000/f_auto,q_auto:low/t3yiamlsfpqwjfaskkkp.jpg",
+          "descriptions": {
+            "shortDescription": "Suave y dulce, con auténtico sabor a banano en cada bocado",
+            "largeDescription": "Delicioso pan suave y esponjoso con un toque natural de banano maduro que le otorga un sabor dulce y fragante. Su textura húmeda y tierna lo hace perfecto para cualquier momento del día, ya sea como un tentempié, acompañando un café o disfrutado solo. Un clásico que nunca pasa de moda"
+          }
+        },
+        {
+          "name": "Pan de chocobanano",
+          "price": "22.500",
+          "image": "https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_2000/f_auto,q_auto:low/fg1qmcvi3jzqhbiqv68o.jpg",
+          "descriptions": {
+            "shortDescription": "Pan de banano con un toque de chocolate para un sabor irresistible",
+            "largeDescription": "Un delicioso pan que combina el suave sabor del banano con el toque irresistible del chocolate. Su textura esponjosa y húmeda, junto con el dulce contraste de los ingredientes, lo convierten en una opción perfecta para cualquier hora del día, ya sea en el desayuno, la merienda o como antojo especial"
+          }
+        }
+      ]
+    }
+  ],
+  "best-sellings": [
+    {
+      "name": "Viena de leche",
+      "price": "22.000",
+      "image": "https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_2000/f_auto,q_auto:low/cfj60erxx0pdgggjyh0n.jpg",
+      "descriptions": {
+        "shortDescription": "Delicado pan viena enriquecido con un toque de leche, ideal para acompañar",
+        "largeDescription": "Una vienesa suave y delicada, enriquecida con un toque de leche que le otorga una textura ligera y un sabor suave. Perfecta para acompañar desayunos o meriendas, su sabor suave y esponjoso la convierte en una opción versátil y deliciosa, ideal para disfrutar con mermelada, mantequilla o sola"
+      }
+    },
+    {
+      "name": "Viena de chocolate",
+      "price": "23.000",
+      "image": "https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_2000/f_auto,q_auto:low/ewet85xtj9jvnweeo7to.jpg",
+      "descriptions": {
+        "shortDescription": "Pan viena con el sabor intenso del chocolate, perfecto para tus antojos",
+        "largeDescription": "Deliciosa vienesa con un toque de chocolate que la convierte en la opción perfecta para los amantes de lo dulce. Su textura suave y esponjosa, combinada con el sabor intenso del chocolate, la hace ideal para acompañar un café o disfrutar en cualquier momento del día como un antojo irresistible"
+      }
+    },
+    {
+      "name": "Pan de banano",
+      "price": "26.500",
+      "image": "https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_2000/f_auto,q_auto:low/t3yiamlsfpqwjfaskkkp.jpg",
+      "descriptions": {
+        "shortDescription": "Suave y dulce, con auténtico sabor a banano en cada bocado",
+        "largeDescription": "Delicioso pan suave y esponjoso con un toque natural de banano maduro que le otorga un sabor dulce y fragante. Su textura húmeda y tierna lo hace perfecto para cualquier momento del día, ya sea como un tentempié, acompañando un café o disfrutado solo. Un clásico que nunca pasa de moda"
+      }
+    },
+    {
+      "name": "Pan de chocobanano",
+      "price": "22.500",
+      "image": "https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_2000/f_auto,q_auto:low/fg1qmcvi3jzqhbiqv68o.jpg",
+      "descriptions": {
+        "shortDescription": "Pan de banano con un toque de chocolate para un sabor irresistible",
+        "largeDescription": "Un delicioso pan que combina el suave sabor del banano con el toque irresistible del chocolate. Su textura esponjosa y húmeda, junto con el dulce contraste de los ingredientes, lo convierten en una opción perfecta para cualquier hora del día, ya sea en el desayuno, la merienda o como antojo especial"
+      }
+    }
+  ]
+}

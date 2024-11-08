@@ -20,14 +20,28 @@ export interface ILink {
   link: string;
 }
 
-// ---- COMPONENTES -> PRODUCTOS INTERFACE ----
-export interface IProducts {
-  key: number;
-  name: string;
-  price: string;
-  imgUrl: string;
-  shortDescription: string;
-}
-
 // ---- COMPONENTES -> CARD PRODUCT ----
 export type ProductCardColor = 'Light' | 'Dark';
+
+// SERVICES -> API CALL
+export interface IProduct {
+  name: string;
+  price: string;
+  image: string;
+  descriptions: {
+    shortDescription: string;
+    largeDescription: string;
+  };
+}
+export interface IProductApiCall {
+  'group-name': string;
+  category: string;
+  tags: string[];
+  variations: IProduct[];
+}
+
+export type IProductCategory =
+  | 'Tradicionales'
+  | 'Pankas'
+  | 'Vienas'
+  | 'Panes de banano';

@@ -2,9 +2,10 @@
   width: 100%;
   display: grid;
   place-content: center;
-  height: 60vh;
+  height: 450px;
   text-align: center;
-  background-image: url('../../../../assets/img/hero/hero-bakery.jpg');
+  background-image: url('https://res.cloudinary.com/dyjzwx82w/image/upload/f_webp,q_auto/clark-young-jfbMODLPrQ0-unsplash_1_qrmuzu');
+  background-size: cover;
   color: var(--primary-color-full);
 }
 .hero_container::after {

@@ -1,6 +1,4 @@
 import style from './CartPopup.module.css';
-import VienaLecheImg from '../../../../../../../../../assets/img/breads/viena-leche.jpg';
-import PanDeBananoImg from '../../../../../../../../../assets/img/breads/pan-banano.jpg';
 function CartPopup() {
   return (
     <div className={style.cart_box}>
@@ -8,7 +6,7 @@ function CartPopup() {
       <div className={style.cart_box_item_card}>
         <div className={style.cart_box_item_card_info}>
           <img
-            src={VienaLecheImg}
+            src="https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_500/f_webp,q_auto:low/cfj60erxx0pdgggjyh0n.jpg"
             alt="Viena de leche"
             className={style.card_box_item_card_img}
           />
@@ -22,7 +20,7 @@ function CartPopup() {
       <div className={style.cart_box_item_card}>
         <div className={style.cart_box_item_card_info}>
           <img
-            src={PanDeBananoImg}
+            src="https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_500/f_auto,q_auto:low/t3yiamlsfpqwjfaskkkp.jpg"
             alt=""
             className={style.card_box_item_card_img}
           />
