@@ -1,21 +1,23 @@
-import { ProductCardColor } from '../../../../../../config/types/types';
+import { useDispatch } from 'react-redux';
+import {
+  IProductApiCall,
+  OPEN_CART,
+  ProductCardColor,
+} from '../../../../../../config/types/types';
 import style from './ProductCard.module.css';
+import { addProductToCart } from '../../../../../../config/state/reducers/cartReducer';
 
 interface IProductCardProps {
-  name: string;
-  price: string;
-  shortDescription: string;
-  imgSrc: string;
+  product: IProductApiCall;
   color: ProductCardColor;
 }
 
-function ProductCard({
-  name,
-  price,
-  shortDescription = 'Prueba un producto delicioso recién horneado',
-  imgSrc,
-  color,
-}: IProductCardProps) {
+function ProductCard({ product, color }: IProductCardProps) {
+  const dispatch = useDispatch();
+  function addProductCart() {
+    dispatch(addProductToCart(product));
+    dispatch({ type: OPEN_CART });
+  }
   return (
     <div
       className={`${style.product_card} ${
@@ -23,19 +25,19 @@ function ProductCard({
       }`}
     >
       <div className={style.product_card_header}>
-        <img src={imgSrc} alt="" />
+        <img src={product.image} alt="" />
       </div>
       <div className={style.product_card_body_wrapper}>
         <div className={style.product_card_body_header}>
-          <h2>{name}</h2>
-          <h3>${price}</h3>
+          <h2>{product.name}</h2>
+          <h3>${product.price}</h3>
         </div>
         <div className={style.product_card_body_description}>
-          <p>{shortDescription}</p>
+          <p>{product.descriptions.shortDescription}</p>
         </div>
       </div>
       <div className={style.product_card_body_footer}>
-        <a href="">Comprar</a>
+        <a onClick={addProductCart}>Comprar</a>
       </div>
     </div>
   );

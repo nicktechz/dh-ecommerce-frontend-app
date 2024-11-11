@@ -32,7 +32,11 @@ export default function navBarReducer(state = initState, action: Action) {
     case CLOSE_MOBILE_MENU:
       return { ...state, isMenuOpen: false };
     case OPEN_CART:
-      return { ...state, isCartOpen: true, isAccountOpen: false };
+      return {
+        ...state,
+        isCartOpen: true,
+        isAccountOpen: false,
+      };
     case CLOSE_CART:
       return { ...state, isCartOpen: false };
     case OPEN_ACCOUNT:

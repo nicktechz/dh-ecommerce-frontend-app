@@ -10,9 +10,9 @@ import ProductsShowcase from './components/ProductsShowcase/ProductsShowcase';
 
 function Home() {
   const { data: bestSellingProducts } = useGetBestSellingProductsQuery();
-  const { data: pankasProducts } = useGetProductsByCategoryQuery('Pankas');
+  const { data: pankasProducts } = useGetProductsByCategoryQuery('Panka');
   const { data: traditionalProducts } =
-    useGetProductsByCategoryQuery('Tradicionales');
+    useGetProductsByCategoryQuery('Tradicional');
 
   return (
     <>

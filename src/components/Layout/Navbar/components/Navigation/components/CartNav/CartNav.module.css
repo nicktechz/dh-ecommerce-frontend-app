@@ -3,9 +3,9 @@
   align-items: center;
   min-width: auto;
   position: relative;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   .navbar_information_box_account_cart_count {
-    --width-and-height: 18px;
+    --width-and-height: 22px;
     background-color: var(--secondary-color-full);
     border-radius: 100%;
     display: grid;

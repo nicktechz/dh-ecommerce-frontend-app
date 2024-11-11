@@ -1,9 +1,12 @@
-import { IProduct, ProductCardColor } from '../../../../config/types/types';
+import {
+  IProductApiCall,
+  ProductCardColor,
+} from '../../../../config/types/types';
 import ProductCard from './Components/ProductCard/ProductCard';
 import style from './ProductShowcase.module.css';
 
 interface IProductShowcaseProps {
-  products: IProduct[] | undefined;
+  products: IProductApiCall[] | undefined;
   color: ProductCardColor;
 }
 
@@ -12,11 +15,8 @@ function ProductsShowcase({ products = [], color }: IProductShowcaseProps) {
     <section className={style.product_showcase}>
       {products.map((product) => (
         <ProductCard
-          name={product.name}
-          price={product.price}
-          imgSrc={product.image}
-          shortDescription={product.descriptions.shortDescription}
-          key={product.name}
+          key={product['product-identifier']}
+          product={product}
           color={color}
         />
       ))}

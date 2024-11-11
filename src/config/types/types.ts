@@ -10,6 +10,10 @@ export const CLOSE_ACCOUNT = '[ACCOUNT] Close Account';
 export const LOGGED_IN_USER = '[ACCOUNT] LOGGED IN USER';
 export const LOGGED_OUT_USER = '[ACCOUNT] LOGGED OUT USER';
 
+// ---- REDUX -> CART REDUCER ----
+export const ADD_PRODUCT_TO_CART = '[CART] ADD PRODUCT TO CART';
+export const REMOVE_PRODUCT_FOM_CART = '[CART] REMOVE_PRODUCT_FROM_CART';
+
 // ---- COMPONENTES -> LINKS NAVBAR & FOOTER ----
 
 type LinkType = 'Internal' | 'External';
@@ -24,8 +28,11 @@ export interface ILink {
 export type ProductCardColor = 'Light' | 'Dark';
 
 // SERVICES -> API CALL
-export interface IProduct {
+
+export interface IProductApiCall {
+  'product-identifier': string;
   name: string;
+  category: IProductCategory;
   price: string;
   image: string;
   descriptions: {
@@ -33,15 +40,9 @@ export interface IProduct {
     largeDescription: string;
   };
 }
-export interface IProductApiCall {
-  'group-name': string;
-  category: string;
-  tags: string[];
-  variations: IProduct[];
-}
 
 export type IProductCategory =
-  | 'Tradicionales'
-  | 'Pankas'
-  | 'Vienas'
-  | 'Panes de banano';
+  | 'Tradicional'
+  | 'Panka'
+  | 'Viena'
+  | 'Pan de banano';

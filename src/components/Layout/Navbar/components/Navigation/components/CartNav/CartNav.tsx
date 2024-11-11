@@ -3,25 +3,24 @@ import { ShoppingCart } from 'lucide-react';
 import CartPopup from './Components/CartPopup/CartPopup';
 import { useDispatch, useSelector } from 'react-redux';
 import { IRootState } from '../../../../../../../config/state/stores/store';
-import { CLOSE_CART, OPEN_CART } from '../../../../../../../config/types/types';
+import { OPEN_CART } from '../../../../../../../config/types/types';
 
 function CartNav() {
   const isCartOpen = useSelector(
     (state: IRootState) => state.navigationReducer.isCartOpen
   );
+  const productsCart = useSelector(
+    (state: IRootState) => state.cartReducer.products
+  );
   const dispatch = useDispatch();
-  function toggleIsCartOpen() {
-    if (!isCartOpen) {
-      dispatch({ type: OPEN_CART });
-    } else {
-      dispatch({ type: CLOSE_CART });
-    }
+  function openCart() {
+    dispatch({ type: OPEN_CART });
   }
   return (
     <>
       <div
         className={styles.navbar_information_box_account_cart}
-        onClick={toggleIsCartOpen}
+        onClick={openCart}
       >
         <ShoppingCart
           fillOpacity="0"
@@ -29,7 +28,11 @@ function CartNav() {
           size="24px"
         />
         <div className={styles.navbar_information_box_account_cart_count}>
-          2
+          {productsCart.length === 0
+            ? 0
+            : productsCart
+                .map((product) => product.cartQty)
+                .reduce((accumulator, current) => accumulator + current)}
         </div>
       </div>
       {isCartOpen ? <CartPopup /> : null}

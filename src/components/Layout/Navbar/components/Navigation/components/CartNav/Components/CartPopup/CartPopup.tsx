@@ -1,49 +1,65 @@
+import { PanelRightClose } from 'lucide-react';
 import style from './CartPopup.module.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { CLOSE_CART } from '../../../../../../../../../config/types/types';
+import { IRootState } from '../../../../../../../../../config/state/stores/store';
+import CartItem from './Components/CartItem';
+import { Link } from 'react-router-dom';
 function CartPopup() {
+  const products = useSelector(
+    (state: IRootState) => state.cartReducer.products
+  );
+  const dispatch = useDispatch();
+  const isCartOpen = useSelector(
+    (state: IRootState) => state.navigationReducer.isCartOpen
+  );
+  function closeCart() {
+    dispatch({ type: CLOSE_CART });
+  }
   return (
-    <div className={style.cart_box}>
-      <h2>Resumen del carrito</h2>
-      <div className={style.cart_box_item_card}>
-        <div className={style.cart_box_item_card_info}>
-          <img
-            src="https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_500/f_webp,q_auto:low/cfj60erxx0pdgggjyh0n.jpg"
-            alt="Viena de leche"
-            className={style.card_box_item_card_img}
+    <div
+      className={`${style.cart_box} ${
+        !isCartOpen ? style.cart_box_animation_exit : null
+      }`}
+    >
+      <div className={style.cart_box_header}>
+        <h2>Resumen del carrito</h2>
+        <div onClick={closeCart}>
+          <PanelRightClose
+            fillOpacity={0}
+            className={style.cart_box_header_close_cart}
           />
-          <div className={style.cart_box_item_card_info_text}>
-            <h3>Viena de leche</h3>
-            <span>$19.900 (Unidad)</span>
-          </div>
         </div>
-        <div>x1</div>
       </div>
-      <div className={style.cart_box_item_card}>
-        <div className={style.cart_box_item_card_info}>
-          <img
-            src="https://res.cloudinary.com/dyjzwx82w/image/upload/c_scale,w_500/f_auto,q_auto:low/t3yiamlsfpqwjfaskkkp.jpg"
-            alt=""
-            className={style.card_box_item_card_img}
-          />
-          <div className={style.cart_box_item_card_info_text}>
-            <h3>Pan de banano</h3>
-            <span>$26.500 (Unidad)</span>
-          </div>
-        </div>
-        <div>x3</div>
-      </div>
+      {products.map((product) => (
+        <CartItem key={product['product-identifier']} product={product} />
+      ))}
       <div className={style.cart_box_footer}>
         <div className={style.cart_box_footer_delivery}>
           <span>Envio:</span>
-          <span>$6.500(COP)</span>
+          <span>Por calcular</span>
         </div>
         <div>
           <span className={style.cart_box_footer_total}>Total:</span>
-          <span>$105.900(COP)</span>
+          <span>
+            {products.length === 0
+              ? '$0 (COP)'
+              : '$' +
+                products
+                  .map(
+                    (product) =>
+                      parseFloat(product.price.replace(/\./g, '')) *
+                      product.cartQty
+                  )
+                  .reduce((accumulator, current) => accumulator + current)
+                  .toLocaleString('es-ES') +
+                ' (COP)'}
+          </span>
         </div>
       </div>
-      <a href="" className={style.cart_box_button}>
+      <Link to={'/carrito'} className={style.cart_box_button}>
         Ir al carrito
-      </a>
+      </Link>
     </div>
   );
 }

@@ -3,10 +3,12 @@ import navBarReducer from '../reducers/navBarReducer';
 import userCredentialsReducer from '../reducers/userCredentialsReducer';
 import { productsApiReducer } from '../reducers/productsApiReducer';
 import { setupListeners } from '@reduxjs/toolkit/query';
+import { cartSlicer } from '../reducers/cartReducer';
 
 const store = configureStore({
   reducer: {
     navigationReducer: navBarReducer,
+    cartReducer: cartSlicer.reducer,
     userCredentials: userCredentialsReducer,
     [productsApiReducer.reducerPath]: productsApiReducer.reducer,
   },
