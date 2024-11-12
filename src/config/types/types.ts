@@ -5,14 +5,11 @@ export const OPEN_CART = '[CART] Open Cart';
 export const CLOSE_CART = '[CART] Close Cart';
 export const OPEN_ACCOUNT = '[ACCOUNT] Open Account';
 export const CLOSE_ACCOUNT = '[ACCOUNT] Close Account';
+export const CLOSE_ALL_MODALS = '[MODALS] Close All';
 
 // ---- REDUX -> USER CREDENTIALS REDUCER ACTIONS ----
 export const LOGGED_IN_USER = '[ACCOUNT] LOGGED IN USER';
 export const LOGGED_OUT_USER = '[ACCOUNT] LOGGED OUT USER';
-
-// ---- REDUX -> CART REDUCER ----
-export const ADD_PRODUCT_TO_CART = '[CART] ADD PRODUCT TO CART';
-export const REMOVE_PRODUCT_FOM_CART = '[CART] REMOVE_PRODUCT_FROM_CART';
 
 // ---- COMPONENTES -> LINKS NAVBAR & FOOTER ----
 

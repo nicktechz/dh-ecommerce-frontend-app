@@ -28,6 +28,7 @@ function CartItem({ product }: ICartItemProps) {
             alt={product.name}
             className={style.cart_box_item_card_img}
           />
+
           <div className={style.cart_box_item_card_info_text}>
             <h3>{product.name}</h3>
             <span>{product.price}</span>

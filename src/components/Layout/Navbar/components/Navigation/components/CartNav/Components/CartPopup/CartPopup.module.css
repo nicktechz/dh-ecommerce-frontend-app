@@ -10,6 +10,9 @@
   padding: 12px;
   box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.03);
   z-index: 300;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  overflow-x: hidden;
 }
 
 .cart_box_header {

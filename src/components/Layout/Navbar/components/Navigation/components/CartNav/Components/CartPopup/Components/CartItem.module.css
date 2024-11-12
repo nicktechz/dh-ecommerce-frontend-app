@@ -8,26 +8,29 @@
     display: flex;
     align-items: center;
   }
+  .cart_box_item_card_img {
+    --width-and-height: 40px;
+    max-width: var(--width-and-height);
+    height: var(--width-and-height);
+    clip-path: circle(50% at 50% 50%);
+  }
   .cart_box_item_card_info_text {
     padding: 4px 12px;
+    max-width: 150px;
     & span {
       display: block;
       margin-top: 2.5px;
       font-size: 0.85rem;
     }
   }
-  .cart_box_item_card_img {
-    --width-and-height: 40px;
-    width: var(--width-and-height);
-    height: var(--width-and-height);
-    border-radius: 100%;
-  }
   .cart_box_item_card_qty_container {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 8px;
+    max-width: 50px;
     & svg {
-      width: 18px;
+      width: 20px;
       &:hover {
         cursor: pointer;
       }

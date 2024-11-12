@@ -1,18 +1,20 @@
 import { PanelRightClose } from 'lucide-react';
 import style from './CartPopup.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { CLOSE_CART } from '../../../../../../../../../config/types/types';
+import {
+  CLOSE_ALL_MODALS,
+  CLOSE_CART,
+} from '../../../../../../../../../config/types/types';
 import { IRootState } from '../../../../../../../../../config/state/stores/store';
 import CartItem from './Components/CartItem';
 import { Link } from 'react-router-dom';
 function CartPopup() {
-  const products = useSelector(
-    (state: IRootState) => state.cartReducer.products
-  );
+  const cart = useSelector((state: IRootState) => state.cartReducer);
   const dispatch = useDispatch();
   const isCartOpen = useSelector(
     (state: IRootState) => state.navigationReducer.isCartOpen
   );
+
   function closeCart() {
     dispatch({ type: CLOSE_CART });
   }
@@ -31,7 +33,7 @@ function CartPopup() {
           />
         </div>
       </div>
-      {products.map((product) => (
+      {cart.products.map((product) => (
         <CartItem key={product['product-identifier']} product={product} />
       ))}
       <div className={style.cart_box_footer}>
@@ -41,23 +43,14 @@ function CartPopup() {
         </div>
         <div>
           <span className={style.cart_box_footer_total}>Total:</span>
-          <span>
-            {products.length === 0
-              ? '$0 (COP)'
-              : '$' +
-                products
-                  .map(
-                    (product) =>
-                      parseFloat(product.price.replace(/\./g, '')) *
-                      product.cartQty
-                  )
-                  .reduce((accumulator, current) => accumulator + current)
-                  .toLocaleString('es-ES') +
-                ' (COP)'}
-          </span>
+          <span>${cart.total.toLocaleString('es-ES')} (COP)</span>
         </div>
       </div>
-      <Link to={'/carrito'} className={style.cart_box_button}>
+      <Link
+        to={'/carrito'}
+        className={style.cart_box_button}
+        onClick={() => dispatch({ type: CLOSE_ALL_MODALS })}
+      >
         Ir al carrito
       </Link>
     </div>

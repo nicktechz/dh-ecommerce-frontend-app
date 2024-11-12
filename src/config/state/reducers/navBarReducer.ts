@@ -1,6 +1,7 @@
 import { Action } from '@reduxjs/toolkit';
 import {
   CLOSE_ACCOUNT,
+  CLOSE_ALL_MODALS,
   CLOSE_CART,
   CLOSE_MOBILE_MENU,
   OPEN_ACCOUNT,
@@ -43,6 +44,13 @@ export default function navBarReducer(state = initState, action: Action) {
       return { ...state, isAccountOpen: true, isCartOpen: false };
     case CLOSE_ACCOUNT:
       return { ...state, isAccountOpen: false };
+    case CLOSE_ALL_MODALS:
+      return {
+        ...state,
+        isAccountOpen: false,
+        isCartOpen: false,
+        isMenuOpen: false,
+      };
     default:
       return state;
   }
