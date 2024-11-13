@@ -7,13 +7,25 @@ import {
   useGetProductsByCategoryQuery,
 } from '../../config/state/reducers/productsApiReducer';
 import ProductsShowcase from './components/ProductsShowcase/ProductsShowcase';
+import { useEffect } from 'react';
+import { toast } from 'sonner';
 
 function Home() {
-  const { data: bestSellingProducts } = useGetBestSellingProductsQuery();
-  const { data: pankasProducts } = useGetProductsByCategoryQuery('Panka');
-  const { data: traditionalProducts } =
+  const { data: bestSellingProducts, isError: isErrorBestSelling } =
+    useGetBestSellingProductsQuery();
+  const { data: pankasProducts, isError: isErrorPankas } =
+    useGetProductsByCategoryQuery('Panka');
+  const { data: traditionalProducts, isError: isErrorTraditional } =
     useGetProductsByCategoryQuery('Tradicional');
-
+  useEffect(() => {
+    if (isErrorBestSelling || isErrorPankas || isErrorTraditional) {
+      toast.error('¡Vaya! Tenemos un error', {
+        closeButton: true,
+        description:
+          'Estamos teniendo problemas para cargar nuestros productos, intenta de nuevo más tarde',
+      });
+    }
+  }, [isErrorBestSelling, isErrorPankas, isErrorTraditional]);
   return (
     <>
       <Hero />

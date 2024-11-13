@@ -11,10 +11,24 @@ interface IInitState {
   deliveryPrice: number;
 }
 
+function loadInitState(): IInitState {
+  const cart = localStorage.getItem('cart');
+  if (cart === null) {
+    const initState = { products: [], total: 0, deliveryPrice: 0 };
+    localStorage.setItem('cart', JSON.stringify(initState));
+    return initState;
+  } else {
+    const state: IInitState = JSON.parse(cart) as IInitState;
+    return state;
+  }
+}
+
+const cartInfo = loadInitState();
+
 const initState: IInitState = {
-  products: [],
-  total: 0,
-  deliveryPrice: 0,
+  products: cartInfo.products,
+  total: cartInfo.total,
+  deliveryPrice: cartInfo.deliveryPrice,
 };
 
 export const cartSlicer = createSlice({
@@ -49,6 +63,7 @@ export const cartSlicer = createSlice({
             .reduce((accumulator, current) => accumulator + current) +
           state.deliveryPrice;
       }
+      localStorage.setItem('cart', JSON.stringify(state));
     },
     removeProductFromCart: (state, action: PayloadAction<IProductCart>) => {
       const id = action.payload['product-identifier'];
@@ -76,6 +91,7 @@ export const cartSlicer = createSlice({
             .reduce((accumulator, current) => accumulator + current) +
           state.deliveryPrice;
       }
+      localStorage.setItem('cart', JSON.stringify(state));
     },
   },
 });
