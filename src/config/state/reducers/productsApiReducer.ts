@@ -4,7 +4,9 @@ import { IProductApiCall, IProductCategory } from '../../types/types';
 
 export const productsApiReducer = createApi({
   reducerPath: 'productsApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000/' }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: 'https://dh-json-server-ecommerce.onrender.com/',
+  }),
   endpoints: (builder) => ({
     getAllProducts: builder.query<IProductApiCall[], void>({
       query: () => 'products',

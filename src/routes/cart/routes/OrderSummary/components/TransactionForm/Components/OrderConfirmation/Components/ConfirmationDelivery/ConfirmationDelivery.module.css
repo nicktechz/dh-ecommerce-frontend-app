@@ -1,0 +1,18 @@
+.confirmation_delivery_wrapper {
+  border: 1px solid var(--gray-color-full);
+  border-radius: var(--medium-border-radius);
+  padding: 12px;
+}
+.confirmation_delivery_map {
+  border: 1px solid var(--gray-color-full);
+  height: 200px;
+  border-radius: var(--medium-border-radius);
+}
+
+.confirmation_delivery_info {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-width: 300px;
+}

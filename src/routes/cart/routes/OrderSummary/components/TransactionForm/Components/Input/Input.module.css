@@ -1,0 +1,25 @@
+.label {
+  color: var(--secondary-color-full);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.input {
+  border: 1px solid rgba(67, 40, 24, 0.2);
+  padding: 12px 24px;
+  border-radius: var(--medium-border-radius);
+  &:focus {
+    border: 1px solid var(--secondary-color-full);
+    outline: none;
+  }
+}
+.input_required {
+  color: rgb(190, 0, 0);
+  margin-left: 2px;
+  font-size: 1rem;
+}
+.error_message {
+  font-size: 0.8rem;
+  padding-top: 8px;
+  color: rgb(190, 0, 0);
+  hyphens: none;
+}

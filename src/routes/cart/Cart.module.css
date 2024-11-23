@@ -1,0 +1,15 @@
+.cart_container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 36px 24px;
+  display: flex;
+  line-height: 1.2;
+  align-items: flex-start;
+  position: relative;
+  gap: 48px;
+}
+@media screen and (max-width: 1024px) {
+  .cart_container {
+    flex-direction: column-reverse;
+  }
+}

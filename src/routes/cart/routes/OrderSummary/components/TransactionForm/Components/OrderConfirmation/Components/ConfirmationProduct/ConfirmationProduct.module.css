@@ -1,0 +1,27 @@
+.product_confirmation_wrapper {
+  width: 100%;
+  border: 1px solid var(--gray-color-full);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: var(--medium-border-radius);
+  gap: 12px;
+  & img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+.product_confirmation_info {
+  display: flex;
+  flex-grow: 1;
+  gap: 4px;
+  flex-direction: column;
+  & h2 {
+    font-size: 1.2rem;
+  }
+  & span {
+    font-size: 0.9rem;
+  }
+}

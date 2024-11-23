@@ -9,7 +9,7 @@ function Layout() {
       <Navbar />
       <main>
         <Outlet />
-        <Toaster richColors />
+        <Toaster richColors pauseWhenPageIsHidden={true} />
       </main>
       <Footer />
     </>

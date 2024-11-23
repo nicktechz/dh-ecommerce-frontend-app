@@ -1,0 +1,6 @@
+.transaction_modal_form_double_input {
+  display: flex;
+  gap: 12px;
+  flex-grow: 0;
+  padding: 8px 0px;
+}

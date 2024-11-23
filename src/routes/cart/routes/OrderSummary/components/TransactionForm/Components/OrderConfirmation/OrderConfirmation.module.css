@@ -1,0 +1,11 @@
+.order_confirmation_products_group {
+  padding-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.order_confirmation_title {
+  padding-bottom: 12px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}

@@ -1,0 +1,7 @@
+.checkout_products_container {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  overflow: hidden;
+}

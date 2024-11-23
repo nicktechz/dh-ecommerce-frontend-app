@@ -28,7 +28,7 @@ const cartInfo = loadInitState();
 const initState: IInitState = {
   products: cartInfo.products,
   total: cartInfo.total,
-  deliveryPrice: cartInfo.deliveryPrice,
+  deliveryPrice: 50000,
 };
 
 export const cartSlicer = createSlice({
@@ -54,14 +54,12 @@ export const cartSlicer = createSlice({
         state.products = [...state.products, { ...action.payload, cartQty: 1 }];
       }
       if (state.products.length > 0) {
-        state.total =
-          state.products
-            .map(
-              (product) =>
-                Number(product.price.replace(/\./g, '')) * product.cartQty
-            )
-            .reduce((accumulator, current) => accumulator + current) +
-          state.deliveryPrice;
+        state.total = state.products
+          .map(
+            (product) =>
+              Number(product.price.replace(/\./g, '')) * product.cartQty
+          )
+          .reduce((accumulator, current) => accumulator + current);
       }
       localStorage.setItem('cart', JSON.stringify(state));
     },
@@ -82,18 +80,43 @@ export const cartSlicer = createSlice({
         });
       }
       if (state.products.length > 0) {
-        state.total =
-          state.products
-            .map(
-              (product) =>
-                Number(product.price.replace(/\./g, '')) * product.cartQty
-            )
-            .reduce((accumulator, current) => accumulator + current) +
-          state.deliveryPrice;
+        state.total = state.products
+          .map(
+            (product) =>
+              Number(product.price.replace(/\./g, '')) * product.cartQty
+          )
+          .reduce((accumulator, current) => accumulator + current);
       }
+      localStorage.setItem('cart', JSON.stringify(state));
+    },
+    removeAllUnitsFromCart: (state, action: PayloadAction<IProductCart>) => {
+      const id = action.payload['product-identifier'];
+      state.products = state.products.filter(
+        (item) => item['product-identifier'] !== id
+      );
+      if (state.products.length > 0) {
+        state.total = state.products
+          .map(
+            (product) =>
+              Number(product.price.replace(/\./g, '')) * product.cartQty
+          )
+          .reduce((accumulator, current) => accumulator + current);
+      } else {
+        state.total = 0;
+      }
+      localStorage.setItem('cart', JSON.stringify(state));
+    },
+    removeAllProducts: (state) => {
+      state.total = 0;
+      state.products = [];
       localStorage.setItem('cart', JSON.stringify(state));
     },
   },
 });
 
-export const { addProductToCart, removeProductFromCart } = cartSlicer.actions;
+export const {
+  addProductToCart,
+  removeProductFromCart,
+  removeAllUnitsFromCart,
+  removeAllProducts,
+} = cartSlicer.actions;
