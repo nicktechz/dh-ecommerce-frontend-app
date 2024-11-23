@@ -1,51 +1,94 @@
-# React + TypeScript + Vite
+# 🥖 Bakery Ecommerce Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An intuitive and responsive ecommerce platform for a fictitious bakery, allowing users to browse products, add them to their cart, and proceed to checkout. Built using **React**, **TypeScript**, **Redux**, and **CSS**.
 
-Currently, two official plugins are available:
+## 📋 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project simulates an online store for a bakery, retrieving product data from a mock API. It demonstrates core ecommerce functionalities, including cart management, product browsing, and payment simulation. The main goal was to practice building a full-featured ecommerce site with advanced state management and form handling.
 
-## Expanding the ESLint configuration
+## 🚀 Key Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 🛒 Shopping Cart with Local Storage
 
-- Configure the top-level `parserOptions` property like this:
+- Utilizes the **Local Storage API** to preserve cart data across browser sessions.
+- Ensures that products added to the cart remain available even after the user refreshes the page or closes the browser.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 🔄 Global State Management with Redux
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Implements **Redux** for efficient global state management.
+- Integrates **Redux Toolkit Query (RTK)** for streamlined API requests and caching.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### 📱 Responsive Design
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-************
+- Designed to be fully responsive across all devices using **Flexbox** and **CSS Grid**.
+- Provides an optimized experience on mobile, tablet, and desktop screens.
+
+### 💳 Interactive Credit Card Input
+
+- Uses **React-Credit-Cards-2** to offer an intuitive and user-friendly payment entry interface.
+- Enhances the checkout process by providing real-time card validation feedback.
+
+### ⚠️ Error Handling
+
+- Displays **toast notifications** to alert users if the API is unreachable or if an error occurs.
+- Ensures a smooth user experience by gracefully managing unexpected issues.
+
+### 📝 Complex Form Validation
+
+- Customizable form components with flexible validation rules passed as props.
+- Prevents invalid inputs (e.g., letters, special characters, or numbers) based on specified rules.
+- Supports custom validation logic and configurable form submission handling.
+
+### 📦 Modular Component Architecture
+
+- Components are designed with a clear and maintainable architecture.
+- Simplifies onboarding for new developers by organizing components in a logical and easy-to-understand structure.
+
+### 🎨 Pure Vanilla CSS
+
+- No external CSS frameworks or libraries were used.
+- Strengthens core **CSS** skills by implementing custom styles from scratch.
+
+## 🛠️ Technologies Used
+
+- **React**: Frontend framework for building dynamic user interfaces.
+- **TypeScript**: Enhances JavaScript with type safety for better code quality and maintainability.
+- **Redux & RTK**: State management and API data fetching.
+- **Local Storage API**: Persists data locally in the user's browser.
+- **React-Credit-Cards-2**: Provides an interactive credit card component.
+- **CSS (Flexbox & Grid)**: Styles the entire application without relying on external libraries.
+
+## 📅 Project Duration
+
+- **Development Time**: 2 weeks
+
+## 💡 How to Run the Project
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/nicktechz/dh-ecommerce-frontend-app.git
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   pnpm install
+   ```
+
+3. **Start the development server:**
+
+   ```bash
+   pnpm run dev
+   ```
+
+4. **Open the server:** You can open the project on http://localhost:5153
+
+## Contact
+
+For any questions or feedback, please reach out to:
+
+Nicolas Andres Rueda Macias
+
+- Email: nicktechz0510@gmail.com
+- LinkedIn: https://linkedin.com/in/nicrueda/
