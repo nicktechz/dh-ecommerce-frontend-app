@@ -11,13 +11,32 @@ import { useEffect } from 'react';
 import { toast } from 'sonner';
 
 function Home() {
-  const { data: bestSellingProducts, isError: isErrorBestSelling } =
-    useGetBestSellingProductsQuery();
-  const { data: pankasProducts, isError: isErrorPankas } =
-    useGetProductsByCategoryQuery('Panka');
-  const { data: traditionalProducts, isError: isErrorTraditional } =
-    useGetProductsByCategoryQuery('Tradicional');
+  const {
+    data: bestSellingProducts,
+    isError: isErrorBestSelling,
+    isLoading: isBestSellingLoading,
+  } = useGetBestSellingProductsQuery();
+  const {
+    data: pankasProducts,
+    isError: isErrorPankas,
+    isLoading: isPankasLoading,
+  } = useGetProductsByCategoryQuery('Panka');
+  const {
+    data: traditionalProducts,
+    isError: isErrorTraditional,
+    isLoading: isTraditionalLoading,
+  } = useGetProductsByCategoryQuery('Tradicional');
   useEffect(() => {
+    if (isPankasLoading || isBestSellingLoading || isTraditionalLoading) {
+      toast.loading('Trayendo información', {
+        id: 'loading',
+        position: 'bottom-center',
+        description:
+          'Estamos cargando todos nuestros productos recién horneados',
+      });
+    } else {
+      toast.dismiss();
+    }
     if (isErrorBestSelling || isErrorPankas || isErrorTraditional) {
       toast.error('¡Vaya! Tenemos un error', {
         closeButton: true,
@@ -25,7 +44,14 @@ function Home() {
           'Estamos teniendo problemas para cargar nuestros productos, intenta de nuevo más tarde',
       });
     }
-  }, [isErrorBestSelling, isErrorPankas, isErrorTraditional]);
+  }, [
+    isErrorBestSelling,
+    isErrorPankas,
+    isErrorTraditional,
+    isPankasLoading,
+    isBestSellingLoading,
+    isTraditionalLoading,
+  ]);
   return (
     <>
       <Hero />
